@@ -5,10 +5,11 @@ font-size: 18px;
 }
 
 :root{
-  --background: #F4F4F4;
+  --background: #f8f8f8;
   --header1: #d48edf;
   --header2: #993fb4;
-  --defaultText:#726D73;
+  --defaultText:#737373;
+  --defaultText2:#4d4d4d;
   --h1Colorido: #5e548e;
   --borderlight: #f8d7ff;
 }

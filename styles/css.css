@@ -133,3 +133,111 @@ div.purple-line{
   color: var(--defaultText);  
   line-height: 1.4rem;
 }
+
+.sobre{
+  padding: 100px 2%;
+}
+
+.sobre-fotos img{
+  max-width: 700px;
+  height: 500px;
+}
+
+.sobre-content{
+  display: flex;
+  gap: 2rem;
+}
+
+.sobre-texto h1{
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--h1Colorido);
+}
+
+.sobre-texto h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--defaultText);
+}
+
+.sobre-texto p{
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: var(--defaultText);
+}
+
+strong{
+  font-size: 1.2rem;
+}
+
+.servicos{
+  padding: 0 2% 40px 2%;
+}
+
+.servicos > .container > h1{
+  font-weight: bold;
+  text-align: center;
+  font-size:1.8rem;
+  margin-bottom: 80px;
+  color: var(--defaultText2);
+}
+
+.servicos-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.servicos-box{
+  border: 1.8px solid var(--header1);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  width: calc(28%);
+  margin-bottom: 20px;
+  min-height: 380px;
+}
+
+.servicos-box > .fa-spa{
+  font-size: 50px;
+  color: var(--header2);
+  background-color: var(--header1);
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.servicos-box h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--header1);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.servicos-box p{
+  margin: 20px auto 20px auto ;
+  max-width: 300px;
+  color: var(--defaultText);
+}
+
+.servicos-box a{
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #128c7e;
+  color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.fa-whatsapp{
+  margin-left: 5px;
+}
