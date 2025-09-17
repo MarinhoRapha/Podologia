@@ -1,0 +1,21 @@
+
+*{
+font-family: "Roboto", sans-serif;
+font-size: 18px;
+}
+
+:root{
+  --background: #F4F4F4;
+  --header1: #d48edf;
+  --header2: #993fb4;
+  --defaultText:#726D73;
+  --h1Colorido: #5e548e;
+  
+}
+
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+
+}
