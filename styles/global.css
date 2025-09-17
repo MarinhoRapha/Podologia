@@ -10,7 +10,7 @@ font-size: 18px;
   --header2: #993fb4;
   --defaultText:#726D73;
   --h1Colorido: #5e548e;
-  
+  --borderlight: #f8d7ff;
 }
 
 .container{
@@ -18,4 +18,13 @@ font-size: 18px;
   margin: 0 auto;
   padding: 0 2%;
 
+}
+
+#user-selector{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

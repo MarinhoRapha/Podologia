@@ -17,13 +17,14 @@ div.logo{
 
 div.logo > img{
   margin-right: 15px;
-  width: 85px;
+  width: 75px;
 }
 
 div.logo > h2{
   font-size: 1.5rem;
   color: var(--defaultText);
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 div.menu-desktop{
@@ -33,22 +34,39 @@ div.menu-desktop{
 ul.menu-list-desktop{
   display: flex;
   gap: 1.1rem;
+  justify-content: center;
+}
+
+ul.menu-list-desktop li {
+  border-right: 1px solid var(--borderlight);
+  padding: 5px 10px 5px 0;
 }
 
 ul.menu-list-desktop > li > a {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: bold ;
   text-decoration: none;
   color: var(--header1);
 }
 
-.fa-sun{
-  color: #5e548e;
-}
-
 ul.menu-list-desktop > li:first-child > a:first-child{
   color: var(--header2)
 }
+
+ul.menu-list-desktop > li > a:hover{
+  color: var(--header2);
+}
+
+.fa-sun{
+  margin-top: 3px;
+  color: var(--header1);
+  cursor: pointer;
+}
+
+.fa-sun:hover{
+  color: var(--header2);
+}
+
 
 section.main{
   background-color: var(--background);
@@ -76,7 +94,7 @@ section.main{
 }
 
 .foto-main > img:hover{
-  transform: scale(1.2) rotate(9deg);
+  transform: scale(1.2) rotate(7deg);
 }
 
 .text-main{
@@ -85,7 +103,7 @@ section.main{
 }
 
 .text-main h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--h1Colorido);
 }
 
@@ -93,13 +111,13 @@ section.main{
   display: flex ;
   max-width: 350px;
   margin-top: 30px;
-  gap: 1.6rem;
+  gap: 2rem;
   align-items: center;
 }
 
 div.purple-line{
   width: 65px;
-  height: 2px;
+  height: 1.3px;
   background-color: var(--h1Colorido);
 }
 
@@ -110,7 +128,8 @@ div.purple-line{
 }
 
 .text-main p{
-  max-width: 350px;
+  max-width: 450px;
   margin-top: 30px;
   color: var(--defaultText);  
+  line-height: 1.4rem;
 }
