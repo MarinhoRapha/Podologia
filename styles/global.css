@@ -5,26 +5,35 @@ font-size: 18px;
 scroll-behavior: smooth;
 }
 
-:root, :root[data-theme='light'] {
+:root {
   --background: #fff;
-  --background-2: #f8f8f8;
+  --background-2: #f8f8f8; 
   --lilas1: #d48edf;
   --lilas2: #993fb4;
   --defaultText:#737373;
   --defaultText2:#4d4d4d;
   --h1Colorido: #5e548e;
   --borderlight: #f8d7ff;
+  --white: #fff;
+  --black: #000;
+  --accordion1: #e7e7e7;
+  --accordion2: #f0f0f0;
 }
 
+
 :root[data-theme='dark'] {
-  --background: #1c1c1c;
-  --background-2: #2a2a2a;
-  --lilas1: #8e6dc1;
-  --lilas2: #c49af1;
-  --defaultText:#d1d1d1;
-  --defaultText2:#f5f5f5;
-  --h1Colorido: #c1b3ff;
-  --borderlight: #3c2f4d;
+  --background: #25272c;   
+  --background-2: #28292E;     
+  --lilas1: #b48ed6;          
+  --lilas2: #9d4edd;          
+  --defaultText: #fff;    
+  --defaultText2: #F0F0F0;     
+  --h1Colorido: #7e49a1;     
+  --borderlight: #f8d7ff;    
+  --white: #fff;         
+  --black: #000; 
+  --accordion1: #616161; 
+  --accordion2: #6b6b6b;
 }
 
 .container{

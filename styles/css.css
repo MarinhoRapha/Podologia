@@ -296,6 +296,7 @@ div.container > div.logo-questions > p{
   margin: 16px 0 15px 0;
   text-transform: uppercase;
   letter-spacing: 8px;
+  color: var(--black);
 }
 
 .questions > div.container > h1{
@@ -328,7 +329,7 @@ div.container > div.logo-questions > p{
 
 .accordion > li label{
   color: var(--defaultText2);
-  background-color: #e7e7e7;
+  background-color: var(--accordion1);
   display: flex ;
   align-items: center;
   padding: 15px;
@@ -355,7 +356,7 @@ input[type="radio"]{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s, padding 0.5s;
-  background-color: #f0f0f0;
+  background-color: var(--accordion2);
 }
 
 input[type="radio"]:checked + label + div.accordion-content{
@@ -446,6 +447,11 @@ footer{
   margin-bottom: 15px;
 }
 
+.redes > a{
+  text-decoration: none;
+  color: var(--h1Colorido)
+}
+
 .redes > a:hover .fa-instagram, .redes > a:hover .fa-facebook, .redes > a:hover .fa-twitter{
   transition: 0.3s ease;
   transform: scale(1.2);
@@ -455,7 +461,7 @@ footer{
   text-align: left;
   display: block;
   text-decoration: none;
-  color: var(--defaultText2);
+  color: var(--defaultText);
   margin-bottom: 15px;
 }
 
@@ -472,5 +478,5 @@ footer{
   background: var(--h1Colorido);
   padding: 30px 2%;
   text-align: center;
-  color: var(--background);
+  color: var(--white);
 }
