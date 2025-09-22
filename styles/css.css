@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    background-color: var(--background);
 }
 
 nav.nav-desktop{
@@ -27,6 +28,10 @@ div.logo > h2{
   font-weight: 400;
 }
 
+.logo-link{
+  text-decoration: none;
+}
+
 div.menu-desktop{
   margin-right: 10px;
 }
@@ -46,30 +51,30 @@ ul.menu-list-desktop > li > a {
   font-size: 0.9rem;
   font-weight: bold ;
   text-decoration: none;
-  color: var(--header1);
+  color: var(--lilas1);
 }
 
 ul.menu-list-desktop > li:first-child > a:first-child{
-  color: var(--header2)
+  color: var(--lilas2)
 }
 
 ul.menu-list-desktop > li > a:hover{
-  color: var(--header2);
+  color: var(--lilas2);
 }
 
 .fa-sun{
   margin-top: 3px;
-  color: var(--header1);
+  color: var(--lilas1);
   cursor: pointer;
 }
 
 .fa-sun:hover{
-  color: var(--header2);
+  color: var(--lilas2);
 }
 
 
 section.main{
-  background-color: var(--background);
+  background-color: var(--background-2);
   padding: 80px 2%;
 }
 
@@ -136,6 +141,7 @@ div.purple-line{
 
 .sobre{
   padding: 100px 2%;
+  background-color: var(--background);
 }
 
 .sobre-fotos img{
@@ -174,6 +180,7 @@ strong{
 
 .servicos{
   padding: 0 2% 40px 2%;
+  background-color: var(--background);
 }
 
 .servicos > .container > h1{
@@ -193,21 +200,22 @@ strong{
 }
 
 .servicos-box{
-  border: 1.8px solid var(--header1);
+  border: 1.8px solid var(--lilas1);
   border-radius: 20px;
   text-align: center;
   padding: 20px 10px;
   width: calc(28%);
   margin-bottom: 20px;
   min-height: 380px;
+  background-color: #fff;
 }
 
 .servicos-box > .fa-spa{
   font-size: 50px;
-  color: var(--header2);
-  background-color: var(--header1);
+  color: var(--lilas2);
+  background-color: var(--lilas1);
   border-radius: 50%;
-  padding: 15px;
+  padding: 15px 10px;
   margin-top: 12px;
   margin-bottom: 20px;
 }
@@ -215,7 +223,7 @@ strong{
 .servicos-box h3{
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--header1);
+  color: var(--lilas1);
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -226,11 +234,11 @@ strong{
   color: var(--defaultText);
 }
 
-.servicos-box a{
+.whatsapp-button{
   font-size: 16px;
   font-weight: bold;
-  background-color: #128c7e;
-  color: #fff;
+  background-color: #1cb956;
+  color: var(--background);
   padding: 10px 15px;
   display: inline-block;
   text-decoration: none;
@@ -238,6 +246,231 @@ strong{
   border-radius: 20px;
 }
 
-.fa-whatsapp{
+.whatsapp-button:hover{
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}
+
+.whatsapp-button > .fa-whatsapp{
   margin-left: 5px;
+}
+
+.servicos-box:hover {
+  background-color: var(--lilas1);
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: 8px 6px 6px 0px rgba(0,0,0,0.24);
+}
+
+.servicos-box:hover > h3, .servicos-box:hover > p {
+  color: var(--background);
+  transition: 0.3s ease;
+}
+
+.servicos-box:hover > .fa-spa{
+  transition: 0.3s;
+  background-color: #dfdfdf;
+}
+
+
+
+section.questions{
+  padding: 80px 2% 40px 2%;
+  background-color: var(--background-2);
+}
+
+div.logo-questions{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+div.logo-questions > img{
+  width: 80px;
+  background: transparent;
+}
+
+div.container > div.logo-questions > p{
+  font-size: 14px;
+  text-align: center;
+  margin: 16px 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.questions > div.container > h1{
+  font-size: 1.8rem;
+  color: var(--h1Colorido);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.questions > div.container > h3{
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--defaultText);
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 80px auto;
+}
+
+.accordion{
+  margin: 0 auto;
+  width: 650px;
+}
+
+.accordion li{
+  list-style-type: none;
+  width: 100%;
+  margin: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+.accordion > li label{
+  color: var(--defaultText2);
+  background-color: #e7e7e7;
+  display: flex ;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.accordion li > label::before{
+  content: '+';
+  margin-right: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordion .accordion-content{
+  color: var(--defaultText);
+  line-height: 25px;
+  padding: 0 15px 0 25px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+  background-color: #f0f0f0;
+}
+
+input[type="radio"]:checked + label + div.accordion-content{
+  max-height: 400px;
+  padding: 10px 15px 20px 25px;
+}
+
+input[type="radio"]:checked +  label::before{
+  content: '-';
+  margin-right: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+section.contato{
+  padding: 80px 2%;
+  background-color: var(--background);
+}
+
+div.contato-content{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+div.contato-text{
+  margin-top: 25px;
+  width: 40%;
+}
+
+div.contato-map{
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.contato-text h1{
+  font-size: 2.5rem;
+  color: var(--h1Colorido);
+  margin-bottom: 15px;
+  line-height: 2.5rem;
+}
+
+div.contato-text h3{
+  font-size: 1rem;
+  color: var(--defaultText);
+  margin-bottom: 20px;
+  line-height: 2rem;
+  max-width: 410px;
+  font-weight: 400;
+}
+
+div.contato-text p{
+  font-size: 1rem;
+  color: var(--h1Colorido);
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+footer{
+  padding: 40px 2%;
+  border-top: 0.5px solid var(--h1Colorido);
+  background-color: var(--background);
+}
+
+.footer-content{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.purple-line2{
+  width: 2px;
+  height: 65px;
+  background-color: var(--h1Colorido);
+  margin: 0 40px;
+}
+
+.redes, .footer-contato{
+  width: 45%;
+  text-align: center;
+}
+
+.redes h3, .footer-contato h3{
+  font-size: 1.3rem;
+  color: var(--h1Colorido);
+  margin-bottom: 15px;
+}
+
+.redes > a:hover .fa-instagram, .redes > a:hover .fa-facebook, .redes > a:hover .fa-twitter{
+  transition: 0.3s ease;
+  transform: scale(1.2);
+}
+
+.footer-contato a, .footer-contato p{
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  color: var(--defaultText2);
+  margin-bottom: 15px;
+}
+
+.footer-contato p > .fa-clock, .footer-contato a > .fa-map, .footer-contato a > .fa-square-whatsapp{
+  color: var(--h1Colorido);
+}
+
+.footer-contato p:hover > .fa-clock, .footer-contato a:hover > .fa-map, .footer-contato a:hover > .fa-square-whatsapp{
+  transition: 0.3s ease;
+  transform: scale(1.2);
+}
+
+.direitos{
+  background: var(--h1Colorido);
+  padding: 30px 2%;
+  text-align: center;
+  color: var(--background);
 }

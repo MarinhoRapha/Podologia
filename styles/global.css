@@ -2,16 +2,29 @@
 *{
 font-family: "Roboto", sans-serif;
 font-size: 18px;
+scroll-behavior: smooth;
 }
 
-:root{
-  --background: #f8f8f8;
-  --header1: #d48edf;
-  --header2: #993fb4;
+:root, :root[data-theme='light'] {
+  --background: #fff;
+  --background-2: #f8f8f8;
+  --lilas1: #d48edf;
+  --lilas2: #993fb4;
   --defaultText:#737373;
   --defaultText2:#4d4d4d;
   --h1Colorido: #5e548e;
   --borderlight: #f8d7ff;
+}
+
+:root[data-theme='dark'] {
+  --background: #1c1c1c;
+  --background-2: #2a2a2a;
+  --lilas1: #8e6dc1;
+  --lilas2: #c49af1;
+  --defaultText:#d1d1d1;
+  --defaultText2:#f5f5f5;
+  --h1Colorido: #c1b3ff;
+  --borderlight: #3c2f4d;
 }
 
 .container{
