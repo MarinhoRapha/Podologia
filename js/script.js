@@ -3,9 +3,9 @@ const icon = document.querySelectorAll('.themeIcon');
 const menu = document.querySelector('.fa-bars')
 
 menu.addEventListener('click',()=>{
-  const menuLi = document.querySelectorAll('#menu-mobile')
-  menuLi.forEach(li =>{
-    li.classList.toggle('active-menu')
+  const menuUl = document.querySelectorAll('#menu-mobile')
+  menuUl.forEach(ul =>{
+    ul.classList.toggle('active-menu')
   })
 })
 

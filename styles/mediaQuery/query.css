@@ -1,11 +1,47 @@
-@media screen and (max-width: 968px){
+@media (max-width: 1281px){
+
+  .sobre-content{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .sobre-fotos, .sobre-texto{
+    width: 70%;
+    justify-content: center;
+  }
+
+  .sobre-texto h2{
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1080px){
+  .servicos-box{
+    width: 40%;
+  }
+
+  .contato-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.contato-text, div.contato-map{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  div.contato-text h3{
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
+}
+
+@media (max-width: 968px){
   div.menu-desktop{
     display: none;
   }  
-
-  div.menu-mobile{
-    display: block;
-  }
 
   nav.nav > i.fa-bars{
     display: block;
@@ -19,6 +55,104 @@
 
   ul.menu-list-mobile > li:hover > a, ul.menu-list-mobile > div.buttonTheme:hover > i.fa-sun{
     color: var(--lilas2);
+  }
+
+  .active-menu{
+    opacity: 1 !important;
+    transform: translateY(0) ;
+    visibility: visible !important;
+  }
+
+  .text-main, .foto-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+  .main-content{
+    flex-direction: column;
+    padding: 0 2%;
+  }
+
+
+  .text-main2{
+    gap: 1rem;
+  }
+
+
+}
+
+
+@media (max-width: 790px){
+  .sobre-texto h1{
+    font-size: 2.2rem;
+  }
+  .footer-content{
+    gap: 0.4rem;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .servicos-box{
+    width: 60%;
+  }
+
+  .sobre-texto h1{
+    font-size: 2.1rem;
+  } 
+  
+  .purple-line2{
+    width: 150px;
+    height: 2px; 
+  }
+
+  .redes{
+    margin-bottom: 20px;
+  }
+
+  .redes, .footer-contato{
+    width: 100%;
+  }
+
+  .footer-content{
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 665px){
+  .sobre-texto h1{
+    font-size: 1.8rem;
+  }
+  .sobre-texto h2{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px){
+  .servicos-box{
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .servicos-box{
+    width: 90%;
+  }
+
+  .foto-main img{
+    max-width: 80%;
+  }
+
+  .text-main h1{
+    font-size: 2.5rem;
   }
 
 }
