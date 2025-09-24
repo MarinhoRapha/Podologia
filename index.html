@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/vendor/reset.css">
   <link rel="stylesheet" href="styles/css.css">
+  <link rel="stylesheet" href="styles/mediaQuery/query.css">
   <link rel="stylesheet" href="styles/vendor/all.css">
   <link rel="stylesheet" href="styles/vendor/fontawesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="js/vendor/all.js"></script>
-  <script src="js/vendor/fontawesome.js"></script>
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
   </style>
@@ -29,12 +29,11 @@
   <header>
 
     <div class="container">
-      <nav class="nav-desktop">
-      <a href="#incio" class="logo-link"> <div class="logo"  id="user-selector">
+      <nav class="nav">
+        <a href="#incio" class="logo-link"><div class="logo"  id="user-selector">
           <img src="assets/images/logo.png" alt="Logo do Site da Podologa Maria Clara">
-          <h2>Podóloga </br> Maria Clara </h2>
-        </div>
-      </a>
+          <h2>Podóloga </br> Maria Clara </h2></div>
+        </a>
         <div class="menu-desktop">
           <ul class="menu-list-desktop">
             <li><a href="#inicio">Inicio</a></li>
@@ -42,11 +41,22 @@
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#duvidas">Duvidas</a></li>
             <li><a href="#contato">Contato</a></li>
-            <i class="fa-regular fa-sun" id="theme-toggle"></i>
           </ul> <!--lista de ul li -->
+          <div class="buttonTheme"><i class="fas fa-sun fa-lg themeIcon"></i></div>
         </div><!--menu desktop-->
-      </nav> <!--nav desktop-->
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </nav> <!--nav-->
     </div> <!--Container -->
+        <div class="menu-mobile">
+          <ul id="menu-mobile" class="menu-list-mobile">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#duvidas">Duvidas</a></li>
+            <li href="#contato"><a href="#contato">Contato</a></li>
+            <div class="buttonTheme"><i class="fas fa-sun fa-lg themeIcon"></i></div>
+          </ul> <!--lista de ul li -->
+        </div><!--menu mobile-->
 
 
   </header>
@@ -240,20 +250,15 @@
 
   </footer>
   <div class="direitos">
-    <h2> © Todos os Direitos Reservados | Marinho</h2>
+    <a href="https://github.com/MarinhoRapha">© Todos os Direitos Reservados | Marinho</a>
   </div>
 
 
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    AOS.init();
-
-</script>
-
-
+<script>AOS.init();</script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

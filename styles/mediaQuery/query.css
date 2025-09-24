@@ -1,0 +1,24 @@
+@media screen and (max-width: 968px){
+  div.menu-desktop{
+    display: none;
+  }  
+
+  div.menu-mobile{
+    display: block;
+  }
+
+  nav.nav > i.fa-bars{
+    display: block;
+  }
+
+  ul.menu-list-mobile li, ul.menu-list-mobile  div.buttonTheme{
+    text-align: center;
+    padding: 12px 2%;
+    border-top: 1px solid var(--h1Colorido);
+  }
+
+  ul.menu-list-mobile > li:hover > a, ul.menu-list-mobile > div.buttonTheme:hover > i.fa-sun{
+    color: var(--lilas2);
+  }
+
+}

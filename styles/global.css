@@ -5,6 +5,10 @@ font-size: 18px;
 scroll-behavior: smooth;
 }
 
+.fa-lg{
+  font-size: 1.15rem !important;
+}
+
 :root {
   --background: #fff;
   --background-2: #f8f8f8; 
@@ -12,6 +16,8 @@ scroll-behavior: smooth;
   --lilas2: #993fb4;
   --defaultText:#737373;
   --defaultText2:#4d4d4d;
+  --textlilas1: #d48edf;   
+  --textlilas2: #993fb4;
   --h1Colorido: #5e548e;
   --borderlight: #f8d7ff;
   --white: #fff;
@@ -27,7 +33,9 @@ scroll-behavior: smooth;
   --lilas1: #b48ed6;          
   --lilas2: #9d4edd;          
   --defaultText: #fff;    
-  --defaultText2: #F0F0F0;     
+  --defaultText2: #F0F0F0;  
+  --textlilas1: #d48edf;   
+  --textlilas2: #993fb4;   
   --h1Colorido: #7e49a1;     
   --borderlight: #f8d7ff;    
   --white: #fff;         

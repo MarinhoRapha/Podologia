@@ -3,8 +3,8 @@ header{
     background-color: var(--background);
 }
 
-nav.nav-desktop{
-  padding: 1%;
+nav.nav{
+  padding: 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,10 +33,12 @@ div.logo > h2{
 }
 
 div.menu-desktop{
+  display: flex;
+  gap: 10px;
   margin-right: 10px;
 }
 
-ul.menu-list-desktop{
+ul.menu-list-desktop, ul.menu-list-mobile{
   display: flex;
   gap: 1.1rem;
   justify-content: center;
@@ -47,30 +49,85 @@ ul.menu-list-desktop li {
   padding: 5px 10px 5px 0;
 }
 
-ul.menu-list-desktop > li > a {
+ul.menu-list-desktop > li > a, ul.menu-list-mobile > li > a{
   font-size: 0.9rem;
   font-weight: bold ;
   text-decoration: none;
   color: var(--lilas1);
 }
 
-ul.menu-list-desktop > li:first-child > a:first-child{
+ul.menu-list-desktop > li:first-child > a:first-child, ul.menu-list-mobile > li:first-child > a:first-child{
   color: var(--lilas2)
 }
 
-ul.menu-list-desktop > li > a:hover{
+ul.menu-list-desktop > li > a:hover, ul.menu-list-mobile > li > a:hover{
   color: var(--lilas2);
 }
 
-.fa-sun{
-  margin-top: 3px;
+i.fa-sun, i.fa-moon{
+  margin-top: 12px;
   color: var(--lilas1);
   cursor: pointer;
+  user-select: none;
 }
 
-.fa-sun:hover{
+.fa-sun:hover, .fa-moon:hover{
   color: var(--lilas2);
 }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.themeIcon.rotate{
+  animation: spin 0.3s linear forwards;
+}
+
+
+nav.nav > i.fa-bars{
+  display: none;
+}
+
+div.menu-mobile{
+    visibility: hidden
+}
+
+div.menu-mobile ul{
+  width: 100%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  position: absolute;
+  top: 12%;
+  flex-direction: column;
+  z-index: 99999;
+  gap: 0;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+}
+
+.active-menu{
+    opacity: 1 !important;
+    transform: translateY(0) !important ;
+    visibility: visible !important;
+}
+
+
+.fa-bars{
+  color: var(--lilas1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa-bars:hover{
+  color: var(--lilas2);
+}
+
+
+/* -----------------------  MAIN --------------------------------- */ 
+
 
 
 section.main{
@@ -139,6 +196,10 @@ div.purple-line{
   line-height: 1.4rem;
 }
 
+
+/* -----------------------  SOBRE --------------------------------- */ 
+
+
 .sobre{
   padding: 100px 2%;
   background-color: var(--background);
@@ -178,6 +239,12 @@ strong{
   font-size: 1.2rem;
 }
 
+
+
+/* -----------------------  SERVIÇOS --------------------------------- */ 
+
+
+
 .servicos{
   padding: 0 2% 40px 2%;
   background-color: var(--background);
@@ -207,15 +274,15 @@ strong{
   width: calc(28%);
   margin-bottom: 20px;
   min-height: 380px;
-  background-color: #fff;
+  background-color: var(--background-2);
 }
 
-.servicos-box > .fa-spa{
-  font-size: 50px;
+.servicos-box > i.fa-spa{
+  font-size: 45px;
   color: var(--lilas2);
   background-color: var(--lilas1);
   border-radius: 50%;
-  padding: 15px 10px;
+  padding: 35px 10px;
   margin-top: 12px;
   margin-bottom: 20px;
 }
@@ -238,7 +305,7 @@ strong{
   font-size: 16px;
   font-weight: bold;
   background-color: #1cb956;
-  color: var(--background);
+  color: var(--white);
   padding: 10px 15px;
   display: inline-block;
   text-decoration: none;
@@ -255,16 +322,16 @@ strong{
   margin-left: 5px;
 }
 
-.servicos-box:hover {
+.servicos-box:hover{
   background-color: var(--lilas1);
   cursor: pointer;
-  transition: 0.3s ease;
-  transform: scale(1.05);
+  transition: 0.3s ease !important;
+  transform: scale(1.05) !important;
   box-shadow: 8px 6px 6px 0px rgba(0,0,0,0.24);
 }
 
 .servicos-box:hover > h3, .servicos-box:hover > p {
-  color: var(--background);
+  color: var(--white);
   transition: 0.3s ease;
 }
 
@@ -272,6 +339,10 @@ strong{
   transition: 0.3s;
   background-color: #dfdfdf;
 }
+
+
+
+/* -----------------------  DUVIDAS --------------------------------- */ 
 
 
 
@@ -416,6 +487,10 @@ div.contato-text p{
   font-weight: 400;
 }
 
+
+/* -----------------------  FOOTER --------------------------------- */ 
+
+
 footer{
   padding: 40px 2%;
   border-top: 0.5px solid var(--h1Colorido);
@@ -479,4 +554,11 @@ footer{
   padding: 30px 2%;
   text-align: center;
   color: var(--white);
+}
+
+.direitos a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
 }
