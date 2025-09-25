@@ -43,6 +43,10 @@
     display: none;
   }  
 
+  div.menu-mobile ul{
+    top: 13%;
+  }
+
   nav.nav > i.fa-bars{
     display: block;
   }
@@ -155,4 +159,22 @@
     font-size: 2.5rem;
   }
 
+}
+
+@media (max-width: 400px){
+  div.menu-mobile ul{
+    top: 13%;
+  }
+}
+
+@media (max-width: 390px){
+  div.menu-mobile ul{
+    top: 13%;
+  }
+}
+
+@media (max-width: 375px){
+  div.menu-mobile ul{
+    top: 17%;
+  }
 }

@@ -1,12 +1,22 @@
 const buttonTheme = document.querySelectorAll('.buttonTheme');
 const icon = document.querySelectorAll('.themeIcon');
 const menu = document.querySelector('.fa-bars')
+const body = document.body
 
-menu.addEventListener('click',()=>{
-  const menuUl = document.querySelectorAll('#menu-mobile')
-  menuUl.forEach(ul =>{
-    ul.classList.toggle('active-menu')
+const menuUl = document.querySelectorAll('#menu-mobile')
+
+  menu.addEventListener('click',(e)=>{    
+    e.stopPropagation()
+    menuUl.forEach(ul =>{
+      ul.classList.toggle('active-menu')
+    })
   })
+
+
+  body.addEventListener('click', ()=>{
+    menuUl.forEach(ul =>{
+      ul.classList.remove('active-menu')
+    })
 })
 
 
@@ -87,7 +97,11 @@ const menuMobile = document.querySelectorAll('#menu-mobile li');
 menuMobile.forEach(li => {
   li.addEventListener('click', () => {
     const link = li.querySelector('a').getAttribute('href');
+    menuUl.forEach(ul =>{
+      ul.classList.toggle('active-menu')
+    })
 
     window.location.href = link;
+
   });
 });
